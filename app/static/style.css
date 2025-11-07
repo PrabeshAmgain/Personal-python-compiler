@@ -1,1 +1,14 @@
-/* Placeholder for styles */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 1px solid black;
+}

@@ -8,10 +8,20 @@
 </head>
 <body>
     <h1>AI Search Algorithm Visualization</h1>
-    <div id="visualization-container">
-        <!-- The visualization will be rendered here -->
+    <div class="controls">
+        <label for="algorithm-select">Algorithm:</label>
+        <select id="algorithm-select">
+            <option value="bfs">Breadth-First Search</option>
+            <option value="dfs">Depth-First Search</option>
+            <option value="a_star">A* Search</option>
+        </select>
+        <label for="start-node-select">Start Node:</label>
+        <select id="start-node-select"></select>
+        <label for="goal-node-select">Goal Node:</label>
+        <select id="goal-node-select"></select>
+        <button id="start-btn">Start Visualization</button>
     </div>
-    <button id="start-btn">Start Visualization</button>
+    <canvas id="visualization-canvas" width="800" height="600"></canvas>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
